@@ -3,5 +3,7 @@
 
 namespace Chess {
 
-constexpr std::string_view starting_position_fen = "rnbqkbnr/8/8/8/8/8/"; // redo 
+constexpr std::string_view starting_position_fen =
+    "rnbqkbnr/pppppppp/8/8/8/8/8/pppppppp/RNBQKBNR";
+
 }
