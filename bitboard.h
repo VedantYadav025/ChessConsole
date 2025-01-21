@@ -9,22 +9,15 @@ namespace Chess {
 class BitBoard {
 public:
   BitBoard();
-  BitBoard(const std::uint64_t &bitboard, const Piece &p);
+  BitBoard(const std::uint64_t &bitboard);
   ~BitBoard();
 
+protected:
+  std::uint64_t getBitboard() const;
+  void setBitboard(const std::uint64_t &val);
+
   // Getters and Setters (Mostly, setters will not be used)
-  constexpr std::uint64_t getBitBoard() const;
-  constexpr Piece getPiece() const;
-  constexpr void setBitboard();
-  constexpr void setPiece();
-
-  constexpr void setPieceOnSquare(const Square &sq);
-  constexpr void clear();
-  friend std::ostream &operator<<(std::ostream &output,
-                                  const BitBoard &bitboard);
-
 private:
   std::uint64_t bitboard_;
-  Piece piece_;
 };
 } // namespace Chess

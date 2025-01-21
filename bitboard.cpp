@@ -1,18 +1,16 @@
 #include "bitboard.h"
 
 namespace Chess {
-BitBoard::BitBoard() {
-  this->bitboard_ = 0ULL;
-  this->piece_.piece = Piece_types::none;
-}
+BitBoard::BitBoard() { this->bitboard_ = 0ULL; }
 
-BitBoard::BitBoard(const std::uint64_t &bitboard, const Piece &piece) {
+BitBoard::BitBoard(const std::uint64_t &bitboard) {
   this->bitboard_ = bitboard;
-  this->piece_ = piece;
 }
 
 BitBoard::~BitBoard() {}
 
-BitBoard::
+std::uint64_t BitBoard::getBitboard() const { return this->bitboard_; }
+
+void BitBoard::setBitboard(const std::uint64_t &val) { this->bitboard_ = val; }
 
 } // namespace Chess
