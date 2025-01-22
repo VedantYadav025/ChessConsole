@@ -20,7 +20,7 @@ add_executable (chess
   "bitboard.h" 
   "bitboard.cpp" 
   "utils.h"
- "chess_constants.h" "square.h" "white_king.h" "white_king.cpp")
+ "chess_constants.h" "square.h" "white_king.h" "white_king.cpp" "white_king.cpp")
 
 # Set C++ standard
 if (CMAKE_VERSION VERSION_GREATER 3.12)
