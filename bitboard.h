@@ -12,11 +12,12 @@ public:
   BitBoard(const std::uint64_t &bitboard);
   ~BitBoard();
 
+  friend std::ostream& operator<<(std::ostream& output, const BitBoard& bitboard);
+
 protected:
   std::uint64_t getBitboard() const;
   void setBitboard(const std::uint64_t &val);
 
-  // Getters and Setters (Mostly, setters will not be used)
 private:
   std::uint64_t bitboard_;
 };

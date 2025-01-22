@@ -13,4 +13,8 @@ std::uint64_t BitBoard::getBitboard() const { return this->bitboard_; }
 
 void BitBoard::setBitboard(const std::uint64_t &val) { this->bitboard_ = val; }
 
+std::ostream& operator<<(std::ostream& output, const BitBoard& bitboard) {
+
+}
+
 } // namespace Chess

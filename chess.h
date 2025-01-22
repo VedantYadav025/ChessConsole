@@ -5,6 +5,7 @@
 
 #include "bitboard.h"
 #include "pieces.h"
+#include "white_king.h"
 #include "utils.h"
 #include <cstdint>
 #include <iostream>

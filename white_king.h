@@ -1,16 +1,17 @@
-#pragma once
-
+#pragma once 
 #include "bitboard.h"
+
 namespace Chess {
 
 	class WhiteKing : private BitBoard {
-		
+	
 	public:
 		WhiteKing();
-		BitBoard validMoves() const;
+		constexpr Square squareOfKing() const;
 		
 	private:
 		Piece piece;
+
 	};
 
-} // namespace Chess
+}
